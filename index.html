@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  <link
+    rel="icon"
+    href="assets/letter-t.png"
+    type="image/png"
+  />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  
+    
+  </head>
+
+  <body>
+    
+  <div id="nav">
+      
+      <div class="logo">Tejas.</div>
+    
+      <ul class="nav-links">
+      <h4><a href="#about" onclick="toggleMenu()">About</a></h4>
+      <h4><a href="#skill" onclick="toggleMenu()">Skills</a></h4>
+      <h4><a href="#projects" onclick="toggleMenu()">Projects</a></h4>
+      <h4><a href="#contact" onclick="toggleMenu()">Contact</a></h4>
+      </ul>
+   </div>
+  </nav>
+   <nav id="hamburger-nav">
+    <div class="logo">Tejas.</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <video
+      autoplay
+      loop
+      muted
+      src="assets/bg-video-2.mp4"
+    ></video>
+   
+  <div id="main">
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/pcircle_2.png" alt="Teajs profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tejas Srivastava</h1>
+        <p class="section__text__p2">Business Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('/assets/Tejas_srivastava.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/tejassri/', '_blank');"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/Tejassrivastava8', '_blank');"
+          />
+        </div>
+      </div>
+    </section>
+
+    
+   
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Pcircle_1.png"
+            alt="Profile picture"
+            class="about-pic" ></img>
+        </div>
+          <div class="text-container">
+            <p>
+              As an MBA student specializing in Digital Business at IIIT Lucknow, I am passionate about data analysis and technology.
+              My skills extend to advanced Excel, Power BI, SQL and beginner-level R, enabling me to conduct comprehensive and insightful data analysis. 
+              I stay current with industry trends to ensure my work is relevant and impactful. 
+              My education is further enhanced by practical experience in marketing, data analytics, people management and business establishment. With a strong educational background and diverse skill set, 
+              I am poised to contribute high-quality, innovative solutions to any organization.
+            </p>
+            <br>
+          
+            <div class="timeline">
+              <div class="timeline-item">
+                  <div class="institution">Indian Institute of Information Technology, Lucknow</div>
+                  <div class="year">2023 — Present</div>
+                  <div class="course">Masters in Digital Business</div>
+              </div>
+              <div class="timeline-item">
+                  <div class="institution">University of Lucknow, Lucknow</div>
+                  <div class="year">2020 — 2023</div>
+                  <div class="course">Bachelors in Business Administration, Management</div>
+              </div>
+            </div>
+      </div>
+      </div>
+    </section>
+
+
+    <section id="skill">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Key Skills</h1>
+      <div class="analytical-tools">
+        <div class="tool">
+              <img src="assets/excel.png" alt="Excel">
+            <p class="p1">Excel</p>
+            <p class="p2">Experienced</p>
+        </div>
+        <div class="tool">
+            <img src="assets/Power_BI.png" alt="Power BI">
+            <p class="p1">Power BI</p>
+            <p class="p2">Experienced</p>
+        </div>
+        <div class="tool">
+            <img src="assets/sql.png" alt="SQL">
+            <p class="p1">SQL</p>
+            <p class="p2">Intermediate</p>
+        </div>
+        <div class="tool">
+            <img src="assets/python.png" alt="Python">
+            <p class="p1">Python</p>
+            <p class="p2">Basic</p>
+        </div>
+    </div>
+    
+    </section>
+
+
+
+
+<!-- Project -->
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+<div class="project-section">
+  <div class="project-card">
+      <img src="assets/Coffee-Dashboard.jpg" alt="Coffee Shop Sales Analysis">
+      <h2>Coffee Shop Sales Analysis</h2>
+      <button onclick="openProjectDetails('coffee')">View Project</button>
+  </div>
+  
+  <div class="project-card">
+      <img src="assets/Crunchy-dashboard.jpg" alt="Crunchy Corner Sales Analysis">
+      <h2>Crunchy Corner Sales Analysis</h2>
+      <button onclick="openProjectDetails('crunchy')">View Project</button>
+  </div>
+  <div class="project-card">
+      <img src="assets/SQL-Music-Library.jpg" alt="SQL Music Library">
+      <h2>SQL Music Library Analysis</h2>
+      <button onclick="openProjectDetails('SQL')">View Project</button>
+  </div>
+</div>
+
+<div id="project-details-modal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeProjectDetails()">&times;</span>
+      <div class="project-details" id="modal-body">
+          <!-- Content will be dynamically added here -->
+      </div>
+  </div>
+</div>
+
+
+
+ <div class="centre-btn">
+<a href="https://github.com/tejassrivastava8" target="_blank" class="btn view-more">View More</a>
+</div>
+</section>
+
+
+
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:tejassrivastava8@gmail.com">Tejassrivastava8@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/tejassri/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      
+      <p>Copyright &#169; 2024 Tejas Srivastava. All Rights Reserved.</p>
+   
+  </footer>
+   
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+      integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+      integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="script.js"></script>
+ 
+  </body>
+</html>

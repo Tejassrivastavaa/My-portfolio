@@ -1,0 +1,1675 @@
+/* Desktop container utility class: */
+/* 1536=1280
+1280=1024
+1024=768
+768=640
+640=475
+475=100% */
+/* mediaqueries.css */
+
+@media screen and  (max-width: 1536px) {
+  #bg {
+    display: none;
+  }
+  #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+      /* background-color: red; */
+    }
+    .about-containers {
+      /* flex-wrap: wrap; */
+      text-align: left;
+    }
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    
+    #contact,
+    #projects {
+      height: fit-content;
+      margin-top: -4rem;
+    }
+
+      }
+
+@media screen and (max-width: 1200px) {
+
+  #nav {
+    display: none;
+  }
+
+  
+ 
+  #hamburger-nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 999;
+    /* background: transparent; */
+    position:absolute;
+    background-image:radial-gradient(circle at 24.1% 68.8%,rgb(31, 30, 30)0%, rgb(0, 0, 0) 99.4%);
+    height:110px;
+    
+  }
+
+  #hamburger-nav .logo{
+    margin-left: 20vw;
+    font-size: 2rem;
+  }
+  .hamburger-icon{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:  20vw;
+    filter: invert(100%);
+   
+  }
+ 
+  .menu-links{
+    position: absolute;
+  margin-right: 100px;
+  width: 100%;
+  top: 30px;
+    
+  }
+
+
+#profile {
+display: flex;
+flex-wrap: wrap;
+padding: 4rem;
+
+}
+#profile .section__pic-container{
+width: 350px;
+height: 350px;
+margin-top: 8rem;
+
+}
+#profile .section__text {
+
+ margin: -2.6rem 0rem;
+  }
+
+
+#about {
+margin-top: 15rem;
+/* overflow: hidden; */
+}
+#about .text-container p {
+  /* white-space: normal; */
+  max-height: 150px;
+  /* font-size: 0.5rem; */
+  font-size: large;
+  text-align:left ;
+
+    /* inline-size: 35rem; */
+    width: fit-contents;
+  }
+  
+
+
+.text-container{
+    /* background-color: yellow; */
+    width: 100vh;
+    
+}
+#skill{
+
+    margin-top: 25rem;
+    
+    /* display: inline; */
+
+}
+.tool {
+    /* justify-content: center; */
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+    /* background: red; */
+    flex: 1 1 30%;
+    margin: 1rem;
+    text-align: center;
+  
+  }
+
+  .tool {
+    width: 45%;
+    margin: 10px;
+  }
+
+#about .timeline {
+white-space: normal;
+overflow: hidden;
+text-overflow: ellipsis;
+display:block;
+margin-top: 6rem;
+}
+.section-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+ 
+  
+ #projects{
+    margin-top: 11rem;
+ }
+.project-section {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }      
+ 
+            
+  #contact {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 10vh;
+    padding-right: 13rem;
+  }
+
+
+    
+  
+} 
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+  #nav {
+    display: none;
+  }
+
+  
+ 
+  #hamburger-nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 999;
+    /* background: transparent */
+    position:absolute;
+    background-image:radial-gradient(circle at 24.1% 68.8%,rgb(31, 30, 30)0%, rgb(0, 0, 0) 99.4%);
+    height:110px;
+    
+    
+  }
+
+  #hamburger-nav .logo{
+    margin-left: 20vw;
+    font-size: 2rem;
+  }
+  .hamburger-icon{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:  20vw;
+    filter: invert(100%);
+   
+  }
+  .menu-links{
+    position: absolute;
+  margin-right: 100px;
+  width: 100%;
+  top: 30px;
+    
+  }
+  
+
+
+#profile {
+display: flex;
+flex-wrap: wrap;
+padding: 4rem;
+
+}
+#profile .section__pic-container{
+width: 350px;
+height: 350px;
+margin-top: 8rem;
+
+}
+#profile .section__text {
+
+ margin: -2.6rem 0rem;
+  }
+
+
+#about {
+margin-top: 15rem;
+/* overflow: hidden; */
+}
+#about .text-container p {
+  /* white-space: normal; */
+  /* max-height: 150px; */
+  /* font-size: 0.5rem; */
+  font-size: large;
+  text-align:left ;
+  overflow-wrap: break-word ;
+  margin-left: 80px;
+ 
+
+    /* inline-size: 35rem; */
+    width: 85%;
+  }
+  
+
+
+.text-container{
+    /* background-color: yellow; */
+    width: 100vh;
+    
+}
+#skill{
+
+    margin-top: 25rem;
+    
+    /* display: inline; */
+
+}
+.tool {
+    /* justify-content: center; */
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+    /* background: red; */
+    flex: 1 1 30%;
+    margin: 1rem;
+    text-align: center;
+  
+  }
+
+  .tool {
+    width: 45%;
+    margin: 10px;
+  }
+
+#about .timeline {
+white-space: normal;
+overflow: hidden;
+text-overflow: ellipsis;
+display:block;
+margin-top: 6rem;
+margin-left: 80px;
+}
+.section-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+ 
+  
+ #projects{
+    margin-top: 11rem;
+ }
+.project-section {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }      
+ 
+            
+  #contact {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 10dvh;
+    /* padding-right: 13rem; */
+  }
+
+
+    
+  
+} 
+
+
+@media screen and (max-width: 768px) {
+
+  #nav {
+    display: none;
+  }
+
+  
+ 
+  #hamburger-nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 999;
+    /* background: transparent; */
+    position:absolute;
+    background-image:radial-gradient(circle at 24.1% 68.8%,rgb(31, 30, 30)0%, rgb(0, 0, 0) 99.4%);
+    height:110px;
+    
+  }
+
+  #hamburger-nav .logo{
+    margin-left: 20vw;
+    font-size: 2rem;
+  }
+  .hamburger-icon{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:  20vw;
+    filter: invert(100%);
+   
+  }
+  
+  .menu-links{
+    position: absolute;
+  margin-right: 50px;
+  width: 85%;
+  top: 30px;
+    
+  }
+  
+
+
+#profile {
+display: flex;
+flex-wrap: wrap;
+padding: 4rem;
+
+}
+#profile .section__pic-container{
+width: 350px;
+height: 350px;
+margin-top: 8rem;
+
+}
+#profile .section__text {
+
+ margin: -2.6rem 0rem;
+  }
+
+  #profile .btn-container{
+    /* background-color: red; */
+    margin-left: 1px;
+    width: 90vw;
+  }
+
+
+#about {
+margin-top: 15rem;
+/* overflow: hidden; */
+}
+#about .text-container p {
+  /* white-space: normal; */
+  /* max-height: 150px; */
+  /* font-size: 0.5rem; */
+  /* font-size: large;
+  text-align:left ;
+  overflow-wrap: break-word ;*/
+  margin-left: -20px; 
+  width: 85vw;
+ 
+  /* white-space: wrap; */
+  /* display: block;          */
+  /* overflow-wrap: break-word; */
+  /* min-height: 200px; */
+ 
+
+    /* inline-size: 35rem; */
+    /* width: 75%; */
+  }
+  
+
+
+.text-container{
+    /* background-color: yellow; */
+    /* width: 100vh; */
+    
+      padding: 40px;
+       width: 90vw;
+      
+     /*  */
+    
+}
+#skill{
+
+    margin-top: 35rem;
+    
+    /* display: inline; */
+
+}
+.tool {
+    /* justify-content: center; */
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+    /* background: red; */
+    flex: 1 1 30%;
+    margin: 1rem;
+    text-align: center;
+  
+  }
+
+  .tool {
+    width: 45%;
+    margin: 10px;
+  }
+
+#about .timeline {
+white-space: normal;
+overflow: hidden;
+text-overflow: ellipsis;
+display:block;
+margin-left: -20px;
+margin-top: 28vh;
+width: 85vw;
+
+}
+.section-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+ 
+  
+ #projects{
+    /* margin-top: 11rem; */
+    width: 100vw;
+    margin-top: 10rem;
+    margin-left: -2px;
+    margin-bottom: auto;
+ }
+.project-section {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .project-card {
+    /* width: 100%; */
+    max-width: 100%;
+    margin-bottom: 20px;
+
+  }      
+  .project-card h2{
+   
+    font-size: 1.5rem;
+  /* white-space:wrap ; */
+    /* margin-right: 100px; */
+    width: 85vw;
+    
+    text-align: center;
+    /* background-color: red; */
+  }
+  #project-details-modal{
+    /* background: red; */
+    overflow-y: auto;
+    z-index: 999;
+    }
+    
+    .project-body {
+      display: flex;
+      flex-direction: column; /* Default to column for smaller screens */
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .badge{
+      margin-top: 70px;
+    }
+    .project-description {
+      text-align: left; /* Default center alignment */
+      margin: 20px 0;
+      
+    }
+    
+    .project-image {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+            
+  #contact {
+    
+   
+    width: 90vw;
+    /* background-color:blueviolet: ; */
+    margin-top: 10vh;
+    /* padding-right: 13rem; */
+  }
+  .contact-info-upper-container,
+  .btn-container {
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: -120px;
+    gap: 8px;
+    width: 90vw;
+    /* background: red; */
+   
+  }
+  .contact-info-container {
+    margin: 2px;
+    /* width: 50%; */
+    white-space: wrap;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+#cursor, #cursor-blur {
+  display: none;
+}
+    
+  
+} 
+
+
+@media screen and (max-width: 640px) {
+
+  #nav {
+    display: none;
+  }
+
+  
+ 
+  #hamburger-nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 999;
+    margin-top: -10px;
+    /* background: transparent; */
+    position:absolute;
+    background-image:radial-gradient(circle at 24.1% 68.8%,rgb(31, 30, 30)0%, rgb(0, 0, 0) 99.4%);
+    height:110px;
+    
+    
+  }
+
+  #hamburger-nav .logo{
+    margin-left: 20vw;
+    font-size: 2rem;
+  }
+  .hamburger-icon{
+    display: flex;
+    flex-wrap: wrap;
+   
+    /* background: yellow; */
+    margin-right:  20vw;
+    filter: invert(100%);
+   
+  }
+ 
+  
+
+
+#profile {
+display: flex;
+flex-wrap: wrap;
+padding: 4rem;
+
+}
+#profile .section__pic-container{
+width: 350px;
+height: 350px;
+margin-top: 8rem;
+
+}
+#profile .section__text {
+
+ margin: -2.6rem 0rem;
+  }
+
+  #profile .btn-container{
+    /* background-color: red; */
+    margin-left: 1px;
+    width: 90vw;
+  }
+
+
+#about {
+margin-top: 10rem;
+/* overflow: hidden; */
+}
+#about .text-container p {
+  /* white-space: normal; */
+  /* max-height: 150px; */
+  /* font-size: 0.5rem; */
+  /* font-size: large;
+  text-align:left ;
+  overflow-wrap: break-word ;*/
+  margin-left: -15px; 
+  width: 80vw;
+ 
+  /* white-space: wrap; */
+  /* display: block;          */
+  /* overflow-wrap: break-word; */
+  /* min-height: 200px; */
+ 
+
+    /* inline-size: 35rem; */
+    /* width: 75%; */
+  }
+  
+
+
+.text-container{
+    /* background-color: yellow; */
+    /* width: 100vh; */
+    
+      padding: 40px;
+       width: 90vw;
+      
+     /*  */
+    
+}
+#skill{
+
+    margin-top: 45rem;
+    
+    /* display: inline; */
+
+}
+.tool {
+    /* justify-content: center; */
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+    /* background: red; */
+    flex: 1 1 30%;
+    margin: 1rem;
+    text-align: center;
+    width: 100vw;
+  
+  }
+
+ 
+#about .timeline {
+white-space: normal;
+overflow: hidden;
+text-overflow: ellipsis;
+display:block;
+margin-left: -20px;
+margin-top: 40vh;
+width: 80vw;
+
+}
+.section-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+ 
+  
+ #projects{
+    /* margin-top: 11rem; */
+    width: 100vw;
+    margin-top: 40rem;
+    margin-left: -2px;
+    margin-bottom: auto;
+ }
+.project-section {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .project-card {
+    /* width: 100%; */
+    max-width: 100%;
+    margin-bottom: 20px;
+
+  }      
+  .project-card h2{
+   
+    font-size: 1.5rem;
+  /* white-space:wrap ; */
+    /* margin-right: 100px; */
+    width: 85vw;
+    
+    text-align: center;
+    /* background-color: red; */
+  }
+  #project-details-modal{
+    /* background: red; */
+    overflow-y: auto;
+    z-index: 999;
+    }
+    
+    .project-body {
+      display: flex;
+      flex-direction: column; /* Default to column for smaller screens */
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .badge{
+      margin-top: 90px;
+      margin-left: -20px;
+    }
+    .project-description {
+      text-align: left; /* Default center alignment */
+      margin: 20px 0;
+      
+    }
+    
+    .project-image {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+            
+  #contact {
+    
+   
+    width: 90vw;
+    /* background-color:blueviolet: ; */
+    margin-top: 10vh;
+    /* padding-right: 13rem; */
+  }
+  #contact h1{
+    width: 55vw;
+    margin-left: -45px;
+  }
+
+  #contact .section__text__p1{
+
+    margin-left: -45px;
+  }
+  .contact-info-upper-container,
+  .btn-container {
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+    margin-left: -120px;
+    width: 80vw;
+    display: block;
+    padding: 2px 2px;
+    /* column-gap: 20px; */
+    
+   
+   
+  }
+  .contact-info-container {
+    margin: 2px;
+    /* width: 50%; */
+    white-space: wrap;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+#cursor, #cursor-blur {
+  display: none;
+}
+    
+  
+} 
+
+
+@media screen and (max-width: 475px) {
+
+  #nav {
+    display: none;
+  }
+
+  
+ 
+  #hamburger-nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 999;
+    margin-top: -10px;
+    /* background: red; */
+    height:70px;
+    /* background: transparent; */
+    position:absolute;
+    background-image:radial-gradient(circle at 24.1% 68.8%,rgb(31, 30, 30)0%, rgb(0, 0, 0) 99.4%);
+    height:110px;
+    
+  }
+
+  #hamburger-nav .logo{
+    margin-left: 20vw;
+    font-size: 2rem;
+    /* background: yellow; */
+  }
+  .hamburger-icon{
+    display: flex;
+    flex-wrap: wrap;
+ 
+    /* background: yellow; */
+    margin-right:  20vw;
+    filter: invert(100%);
+   
+  }
+  .menu-links{
+    position: absolute;
+  margin-right: 50px;
+  width: 100%;
+  top: 30px;
+    
+  }
+  
+
+
+#profile {
+display: flex;
+flex-wrap: wrap;
+padding: 4rem;
+
+}
+#profile .section__pic-container{
+width: 350px;
+height: 350px;
+margin-top: 8rem;
+
+}
+#profile .section__text {
+
+ margin: -2.6rem 0rem;
+  }
+
+  #profile .btn-container{
+    /* background-color: red; */
+    margin-left: 1px;
+    width: 90vw;
+  }
+
+
+#about {
+margin-top: 10rem;
+/* overflow: hidden; */
+}
+#about .text-container p {
+  /* white-space: normal; */
+  /* max-height: 150px; */
+  /* font-size: 0.5rem; */
+  /* font-size: large;
+  text-align:left ;
+  overflow-wrap: break-word ;*/
+  margin-left: -15px; 
+  width: 80vw;
+ 
+  /* white-space: wrap; */
+  /* display: block;          */
+  /* overflow-wrap: break-word; */
+  /* min-height: 200px; */
+ 
+
+    /* inline-size: 35rem; */
+    /* width: 75%; */
+  }
+  
+
+
+.text-container{
+    /* background-color: yellow; */
+    /* width: 100vh; */
+    
+      padding: 40px;
+       width: 90vw;
+      
+     /*  */
+    
+}
+#skill{
+
+    margin-top: 45rem;
+    
+    /* display: inline; */
+
+}
+.tool {
+    /* justify-content: center; */
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+    /* background: red; */
+    flex: 1 1 30%;
+    margin: 1rem;
+    text-align: center;
+    width: 100vw;
+  
+  }
+
+ 
+#about .timeline {
+white-space: normal;
+overflow: hidden;
+text-overflow: ellipsis;
+display:block;
+margin-left: -20px;
+margin-top: 40vh;
+width: 80vw;
+
+}
+.section-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+ 
+  
+ #projects{
+    /* margin-top: 11rem; */
+    width: 100vw;
+    margin-top: 40rem;
+    margin-left: -2px;
+    margin-bottom: auto;
+ }
+.project-section {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .project-card {
+    /* width: 100%; */
+    max-width: 100%;
+    margin-bottom: 20px;
+
+  }      
+  .project-card h2{
+   
+    font-size: 1.5rem;
+  /* white-space:wrap ; */
+    /* margin-right: 100px; */
+    width: 85vw;
+    
+    text-align: center;
+    /* background-color: red; */
+  }
+  #project-details-modal{
+    /* background: red; */
+    overflow-y: auto;
+    z-index: 999;
+    }
+    
+    .project-body {
+      display: flex;
+      flex-direction: column; /* Default to column for smaller screens */
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .badge{
+      margin-top: 90px;
+      margin-left: -20px;
+    }
+    .project-description {
+      text-align: left; /* Default center alignment */
+      margin: 20px 0;
+      
+    }
+    
+    .project-image {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+            
+  #contact {
+    
+   
+    width: 90vw;
+    /* background-color:blueviolet: ; */
+    margin-top: 10vh;
+    /* padding-right: 13rem; */
+  }
+  #contact h1{
+    width: 55vw;
+    margin-left: -45px;
+  }
+
+  #contact .section__text__p1{
+
+    margin-left: -45px;
+  }
+  .contact-info-upper-container,
+  .btn-container {
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: -120px;
+  
+    width: 80vw;
+    /* background: red; */
+    display: block;
+    padding: 2px 2px;
+   
+  }
+  .contact-info-container {
+    margin: 2px;
+    /* width: 50%; */
+    white-space: wrap;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+#cursor, #cursor-blur {
+  display: none;
+}
+    
+  
+} 
+
+
+@media screen and (max-width: 435px) {
+
+  #nav {
+    display: none;
+
+  }
+
+  
+ 
+  #hamburger-nav {
+    
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 999;
+    margin-top: -10px;
+    /* background: transparent; */
+  /* background-color: red;     */
+  position:absolute;
+  background-image:radial-gradient(circle at 24.1% 68.8%,rgb(31, 30, 30)0%, rgb(0, 0, 0) 99.4%);
+  height:110px;
+  }
+
+  #hamburger-nav .logo{
+    margin-left: 20vw;
+    font-size: 1.5rem;
+    /* background: rebeccapurple; */
+  }
+  .hamburger-icon{
+    display: flex;
+    flex-wrap: wrap;
+   
+    /* background: yellow; */
+    margin-right:  20vw;
+    filter: invert(100%);
+   
+  }
+ 
+ video {
+  display:none;
+ }
+body{
+  background-color: #0F0F0F;
+}
+
+#profile {
+display: flex;
+flex-wrap: wrap;
+padding: 4rem;
+
+}
+#profile .section__pic-container{
+width: 250px;
+height: 250px;
+margin-top: 4rem;
+width: 100vw;
+margin-left: -10vw;
+
+}
+#profile .section__text {
+
+ margin: -2.6rem 0rem;
+ margin-left: -10vw;
+ }
+ #profile h1{
+  font-size: 35px;
+ }
+#profile .section__text__p2{
+  /* background: red; */
+  font-size: 25px;
+}
+  #profile .btn-container{
+    /* background-color: red; */
+    margin-left: 1px;
+    width: 90vw;
+  }
+
+
+#about {
+margin-top: -5rem;
+/* overflow: hidden; */
+}
+#about h1{
+  margin-left: -10vw;
+  font-size: 35px;
+  text-wrap: nowrap;
+
+}
+#about .section__text__p1{
+  /* background: red; */
+  /* text-wrap: nowrap; */
+  margin-left: -4vw;
+
+}
+#about img{
+  width: 65vw;
+  margin-left: 18vw;
+
+}
+#about .text-container p {
+  /* white-space: normal; */
+  /* max-height: 150px; */
+  /* font-size: 0.5rem; */
+  /* font-size: large;
+  text-align:left ;
+  overflow-wrap: break-word ;*/
+  margin-left: -15px; 
+  width: 80vw;
+ 
+  /* white-space: wrap; */
+  /* display: block;          */
+  /* overflow-wrap: break-word; */
+  /* min-height: 200px; */
+ 
+
+    /* inline-size: 35rem; */
+    /* width: 75%; */
+  }
+  
+
+
+.text-container{
+    /* background-color: yellow; */
+    /* width: 100vh; */
+    
+      padding: 40px;
+       width: 90vw;
+      
+     /*  */
+    
+}
+
+#skill h1{
+  font-size: 35px;
+  text-wrap: nowrap;
+  margin-left: -10vw;
+  font-size: 35px;
+}
+
+#skill .section__text__p1{
+  text-wrap: nowrap;
+  margin-left: -1vw;
+}
+#skill{
+
+    margin-top: 55rem;
+    
+    /* display: inline; */
+
+}
+.tool {
+    /* justify-content: center; */
+    /* display: inline-block; */
+    
+    /* white-space: wrap; */
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /* padding: 2rem 0; */
+    /* background: red; */
+    /* flex: 1 1 30%; */
+    margin-left: 5px;
+    text-align: center;
+    /* width: 100vw; */
+  
+  }
+.tool img{
+  height: 100px;
+  width: 100px;
+}
+ 
+#about .timeline {
+white-space: normal;
+overflow: hidden;
+text-overflow: ellipsis;
+display:block;
+margin-left: -30px;
+margin-top: 60vh;
+width: 80vw;
+
+}
+.section-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+ 
+  #projects h1{
+    font-size: 35px;
+  }
+ #projects{
+    /* margin-top: 11rem; */
+    width: 100vw;
+    margin-top: 50rem;
+    margin-left: -2px;
+    margin-bottom: auto;
+ }
+.project-section {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .project-card {
+    /* width: 100%; */
+    max-width: 100%;
+    margin-bottom: 20px;
+
+  }      
+  .project-card h2{
+   
+    font-size: 1.3rem;
+  /* white-space:wrap ; */
+    /* margin-right: 100px; */
+    width: 75vw;
+    
+    text-align: center;
+    /* background-color: red; */
+  }
+  #project-details-modal{
+    /* background: red; */
+    overflow-y: auto;
+    
+    }
+    
+    .project-body {
+      display: flex;
+      flex-direction: column; /* Default to column for smaller screens */
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .badge{
+      margin-top: 90px;
+      margin-left: -20px;
+    }
+    .project-description {
+      text-align: left; /* Default center alignment */
+      margin: 20px 0;
+      
+    }
+    
+    .project-image {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+        
+   #contact h1{
+    font-size: 35px;
+   } 
+  #contact {
+    
+   
+    width: 90vw;
+    /* background-color:blueviolet: ; */
+    margin-top: 2vh;
+    /* padding-right: 13rem; */
+  }
+  #contact h1{
+    width: 55vw;
+    margin-left: -55px;
+  }
+
+  #contact .section__text__p1{
+
+    margin-left: -55px;
+  }
+  .contact-info-upper-container,
+  .btn-container {
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: -120px;
+  
+    width: 80vw;
+    /* background: red; */
+    display: block;
+    padding: 2px 2px;
+   
+  }
+  .contact-info-container {
+    margin: 2px;
+    /* width: 50%; */
+    white-space: wrap;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+#cursor, #cursor-blur {
+  display: none;
+}
+    
+  
+} 
+
+
+
+
+@media screen and (max-width: 360px) {
+
+  #nav {
+    display: none;
+
+  }
+
+  
+ 
+  #hamburger-nav {
+    
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 999;
+    margin-top: -10px;
+    /* background: transparent; */
+  /* background-color: red;     */
+  position:absolute;
+  background-image:radial-gradient(circle at 24.1% 68.8%,rgb(31, 30, 30)0%, rgb(0, 0, 0) 99.4%);
+  height:110px;
+  }
+
+  #hamburger-nav .logo{
+    margin-left: 20vw;
+    font-size: 1.5rem;
+    /* background: rebeccapurple; */
+  }
+  .hamburger-icon{
+    display: flex;
+    flex-wrap: wrap;
+   
+    /* background: yellow; */
+    margin-right:  20vw;
+    filter: invert(100%);
+   
+  }
+ 
+ video {
+  display:none;
+ }
+body{
+  background-color: #0F0F0F;
+}
+
+#profile {
+display: flex;
+flex-wrap: wrap;
+padding: 4rem;
+
+}
+#profile .section__pic-container{
+width: 200px;
+height: 2000x;
+margin-top: 4rem;
+width: 100vw;
+margin-left: -30vw;
+
+}
+#profile .section__text {
+
+ margin: -2.6rem 0rem;
+ margin-left: -30vw;
+ }
+ #profile h1{
+  font-size: 30px;
+ }
+#profile .section__text__p2{
+  /* background: red; */
+  font-size: 20px;
+}
+  #profile .btn-container{
+    /* background-color: red; */
+    margin-left: 1px;
+    width: 90vw;
+  }
+
+
+#about {
+margin-top: -5rem;
+/* overflow: hidden; */
+}
+#about h1{
+  margin-left: -20vw;
+  font-size: 30px;
+  text-wrap: nowrap;
+
+}
+#about .section__text__p1{
+  /* background: red; */
+  /* text-wrap: nowrap; */
+  margin-left: -6vw;
+  
+
+}
+#about img{
+  width: 65vw;
+  margin-left: 25vw;
+
+}
+#about .text-container p {
+  /* white-space: normal; */
+  /* max-height: 150px; */
+  /* font-size: 0.5rem; */
+  /* font-size: large;
+  text-align:left ;
+  overflow-wrap: break-word ;*/
+  margin-left: -15px; 
+  width: 75vw;
+ 
+  /* white-space: wrap; */
+  /* display: block;          */
+  /* overflow-wrap: break-word; */
+  /* min-height: 200px; */
+ 
+
+    /* inline-size: 35rem; */
+    /* width: 75%; */
+  }
+  
+
+
+.text-container{
+    /* background-color: yellow; */
+    /* width: 100vh; */
+    
+      padding: 40px;
+       width: 90vw;
+      
+     /*  */
+    
+}
+#skill{
+
+    margin-top: 65rem;
+    
+    /* display: inline; */
+}
+#skill h1 {
+  margin-left: -15vw;
+  font-size: 30px;
+  text-wrap: nowrap;
+}
+#skill .section__text__p1{
+  margin-left: -8vw;
+  text-wrap: nowrap;
+}
+.tool {
+    /* justify-content: center; */
+    /* display: inline-block; */
+    
+    /* white-space: wrap; */
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /* padding: 2rem 0; */
+    /* background: red; */
+    /* flex: 1 1 30%; */
+    margin-left: -10vw;
+    text-align: center;
+    /* width: 100vw; */
+  
+  }
+.tool img{
+  height: 100px;
+  width: 100px;
+}
+ 
+#about .timeline {
+white-space: normal;
+overflow: hidden;
+text-overflow: ellipsis;
+display:block;
+margin-left: -30px;
+margin-top: 85vh;
+width: 80vw;
+
+}
+.section-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+ 
+  
+ #projects{
+    /* margin-top: 11rem; */
+    width: 100vw;
+    margin-top: 50rem;
+    margin-left: -2px;
+    margin-bottom: auto;
+ }
+.project-section {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .project-card {
+    /* width: 100%; */
+    max-width: 100%;
+    margin-bottom: 20px;
+
+  }      
+  .project-card h2{
+   
+    font-size: 1.3rem;
+  /* white-space:wrap ; */
+    /* margin-right: 100px; */
+    width: 75vw;
+    
+    text-align: center;
+    /* background-color: red; */
+  }
+  #project-details-modal{
+    /* background: red; */
+    overflow-y: auto;
+    
+    }
+   .project-links ,a{
+    /* background: red; */
+    /* width: 50vw; */
+    text-wrap: nowrap;
+    font-size: 12px;
+   }
+    
+    .project-body {
+      display: flex;
+      flex-direction: column; /* Default to column for smaller screens */
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .badge{
+      margin-top: 90px;
+      margin-left: -20px;
+    }
+    .project-description {
+      text-align: left; /* Default center alignment */
+      margin: 20px 0;
+      
+    }
+    
+    .project-image {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    #projects h1{
+      font-size: 30px;
+
+    }
+        
+    #contact h1{
+      font-size: 30px;
+      margin-left: -30vw;
+    }
+  #contact {
+    
+   
+    /* width: 90vw; */
+    /* background-color:blueviolet: ; */
+    margin-top: 2vh;
+    /* padding-right: 13rem; */
+  }
+  #contact h1{
+    width: 55vw;
+    margin-left: -55px;
+  }
+
+  #contact .section__text__p1{
+
+    margin-left: -55px;
+  }
+  .contact-info-upper-container,
+  .btn-container {
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-left: -120px; */
+  
+    width: 80vw;
+    /* background: red; */
+    display: block;
+    padding: 2px 2px;
+   
+  }
+  .contact-info-container {
+    margin: 2px;
+    /* width: 50%; */
+    white-space: wrap;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+#cursor, #cursor-blur {
+  display: none;
+}
+    
+  
+} 
+
