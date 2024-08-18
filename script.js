@@ -180,10 +180,10 @@ function openProjectDetails(project) {
       `;
       showSlides(1); // Initialize the first slide
       
-  } else if (project === 'Blinkit') {
+  } else if (project === 'blinkit') {
       modalBody.innerHTML = `
           <div class="project-header">
-              <h2>SQL Music Library</h2>
+              <h2>Blinkit Data Analysis</h2>
               <span class="badge">Power BI Project</span>
           </div>
           <div class="project-body">
