@@ -180,25 +180,27 @@ function openProjectDetails(project) {
       `;
       showSlides(1); // Initialize the first slide
       
-  } else if (project === 'SQL') {
+  } else if (project === 'Blinkit') {
       modalBody.innerHTML = `
           <div class="project-header">
               <h2>SQL Music Library</h2>
-              <span class="badge">SQL Project</span>
+              <span class="badge">Power BI Project</span>
           </div>
           <div class="project-body">
               <div class="project-description">
-                  <p>This project aims to provide insights into the music store's operations by answering specific questions using SQL queries. The database contains information about employees, customers, invoices, tracks, and more. By querying this data, we can uncover valuable information about the store's performance and customer preferences.</p>
+                  <p>This Power BI dashboard project offers a comprehensive analysis of Blinkit, India's Last Minute App, focusing on sales performance, customer satisfaction, and inventory distribution. The interactive dashboard transforms raw data into actionable insights, enabling data-driven decision-making for business optimization.</p>
                    <span id="moreText" style="display: none;">
-                   <Br> <b>The Questions varies from Basic to Advanced:</b><br>
-                   Question Set 1 - Easy<br>
-                   Question Set 2 - Moderate<br>
-                   Question Set 3 - Advance<Br></span>
+                   <Br> <b>Key features include:</b><br>
+                  Real-time KPI tracking: Total sales ($1.20M), average sales ($141), item count (8523), and customer ratings (3.9/5).<br>
+                  Interactive filters for customized analysis by outlet type, size, and product category.<br>
+                  Trend analysis of outlet establishment from 2012 to 2022.<br>
+                  Detailed breakdown of sales by product fat content and item types.<br>
+                  Comparative analysis of outlet performance based on size, location, and type.<br></span>
                         <a href="javascript:void(0);" id="readMoreLink" onclick="toggleReadMore()">Read More</a>
                    </p>
                   <div class="project-links">
               
-                      <a href="https://github.com/Tejassrivastava8/Music-Library-SQL" target="_blank" class="btn github">View Project on GitHub</a>
+                      <a href="https://github.com/Tejassrivastava8/Blinkit-Data-Analysis" target="_blank" class="btn github">View Project on GitHub</a>
                   </div>
               </div>
               
@@ -206,7 +208,31 @@ function openProjectDetails(project) {
                   <div class="carousel">
                       <div class="slides" id="project-slides">
                           <div class="slide">
-                              <img src="assets/SQL-Music-Library.jpg" alt="crunchy corner sales analysis">
+                              <img src="assets/D1.jpg" alt="Blinkit analysis">
+                          </div>
+                            <div class="slide">
+                              <img src="assets/D2.jpg" alt="Blinkit analysis">
+                          </div>
+                            <div class="slide">
+                              <img src="assets/D3.jpg" alt="Blinkit analysis">
+                          </div>
+                            <div class="slide">
+                              <img src="assets/D4.jpg" alt="Blinkit analysis">
+                          </div>
+                            <div class="slide">
+                              <img src="assets/D5.jpg" alt="Blinkit analysis">
+                          </div>
+                            <div class="slide">
+                              <img src="assets/D6.jpg" alt="Blinkit analysis">
+                          </div>
+                            <div class="slide">
+                              <img src="assets/D7.jpg" alt="Blinkit analysis">
+                          </div>
+                            <div class="slide">
+                              <img src="assets/D8.jpg" alt="Blinkit analysis">
+                          </div>
+                            <div class="slide">
+                              <img src="assets/D9.jpg" alt="Blinkit analysis">
                           </div>
                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                       <a class="next" onclick="plusSlides(1)">&#10095;</a>
